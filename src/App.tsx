@@ -3,8 +3,7 @@ import MainLayout from "./layouts/Mian/MainLayout";
 
 export default function App() {
   return (
-    <div className="border-2 border-red-500 p-2 min-w-screen min-h-screen ">
-      <h1> Flow Bit App</h1>
+    <div className="mx-auto w-[98.5vw] min-h-screen">
       <MainLayout>
         <Outlet></Outlet>
       </MainLayout>
