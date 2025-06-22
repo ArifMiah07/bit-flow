@@ -8,11 +8,11 @@ export default function MainLayout({
 }) {
   return (
     <div className=" mx-auto max-w-7xl ">
-      <header className="border-2 border-red-500">
+      <header className="">
         <NavBar></NavBar>
       </header>
-      <main className="border-2 border-red-500">{children}</main>
-      <footer className="border-2 border-red-500">
+      <main className="">{children}</main>
+      <footer className="">
         <Footer></Footer>
       </footer>
     </div>

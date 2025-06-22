@@ -2,8 +2,12 @@ import { BiMenu } from "react-icons/bi";
 import { Link } from "react-router-dom";
 
 export default function NavBar() {
-  const menu = ["Home", "About", "Services", "Contact"];
-  const navLinks = menu.map((item, indx) => (
+
+
+    // menu data :todo: move them into lib or constants file
+  const menu : string[] = ["Home", "About", "Services", "Contact"];
+
+  const navLinks = menu.map((item : string, indx : number) => (
     <Link key={indx} className="" to={`/${item?.trim().toLowerCase()}`}>
       <li className="text-md text-gray-700 font-normal ">{item}</li>
     </Link>
