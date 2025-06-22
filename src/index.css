@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  --font-roboto: "Roboto", sans-serif;
 
   color-scheme: light dark;
   color: #242424;
@@ -15,15 +17,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
 body {
   margin: 0;
   display: flex;
@@ -31,4 +24,11 @@ body {
   min-width: 320px;
   width: 100%;
   min-height: 100vh;
+  font-family: var(--font-roboto);
+}
+
+/* google font */
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
 }

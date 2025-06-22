@@ -30,7 +30,7 @@ export default function NavBar() {
       <div className="flex items-center justify-center gap-4">
         <Link to="/login">
           <button>
-            <span className="text-md text-gray-700 font-normal">Login</span>
+            <span className="text-md text-pink-500 font-normal">Login</span>
           </button>
         </Link>
       </div>
