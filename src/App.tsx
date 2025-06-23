@@ -3,7 +3,7 @@ import MainLayout from "./layouts/Mian/MainLayout";
 
 export default function App() {
   return (
-    <div className="mx-auto w-[98.5vw] min-h-screen">
+    <div className="mx-auto w-full min-h-screen">
       <MainLayout>
         <Outlet></Outlet>
       </MainLayout>
