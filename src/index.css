@@ -31,6 +31,9 @@ body {
 .working-image {
   box-shadow: 30px -30px papayawhip;
 }
+.project-image {
+  box-shadow: 30px -30px papayawhip;
+}
 
 .disc {
   width: 60vw;

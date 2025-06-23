@@ -20,8 +20,9 @@ export default function AboutPage() {
       </div>
       {/* image */}
       <div className=" border border-gray-200 drop-shadow-lg rounded-md p-4 lg:p-12 w-full lg:1/2 flex flex-col items-end justify-start gap-6">
-        <div>
+        <div className="w-full rounded-lg">
           <img
+          className=" rounded-lg"
             src="https://images.pexels.com/photos/3153201/pexels-photo-3153201.jpeg"
             alt=""
           />
