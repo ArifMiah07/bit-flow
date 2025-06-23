@@ -1,31 +1,9 @@
-import uiUxImage from "../../assets/ui-ux.webp";
-import developmentImage from "../../assets/development.webp";
-import animationImage from "../../assets/animation.webp";
+import { subTitleStyle, titleContainerStyle, titleStyle } from "../../lib/constants/services";
+import { cardData } from "../../lib/data/data";
+import type { TCard } from "../../types";
 
 export default function ServicesSection() {
-  type TCard = {
-    title: string;
-    image: string;
-  };
 
-  const cardData: TCard[] = [
-    {
-      title: "Ui/Ux",
-      image: uiUxImage,
-    },
-    {
-      title: "Development",
-      image: developmentImage,
-    },
-    {
-      title: "Animation",
-      image: animationImage,
-    },
-    {
-      title: "Analytics",
-      image: developmentImage,
-    },
-  ];
 
   return (
     <section className=" w-full h-full flex flex-col justify-center">
@@ -63,17 +41,17 @@ export default function ServicesSection() {
       </div>
       {/* projects */}
       <div className="flex flex-col lg:flex-row items-center justify-center w-full my-10">
-        <div className="flex flex-col items-center justify-center gap-4 w-full p-4">
-          <h2 className="font-bold text-5xl text-gray-800 " >700+</h2>
-          <p className="text-lg font-medium text-gray-700">Project Done</p>
+        <div className={titleContainerStyle}>
+          <h2 className={titleStyle} >700+</h2>
+          <p className={subTitleStyle}>Project Done</p>
         </div>
-        <div className="flex flex-col items-center justify-center gap-4 w-full p-4">
-          <h2 className="font-bold text-5xl text-gray-800 " >20+</h2>
-          <p className="text-lg font-medium text-gray-700">Team Member</p>
+        <div className={titleContainerStyle}>
+          <h2 className={titleStyle} >20+</h2>
+          <p className={subTitleStyle}>Team Member</p>
         </div>
-        <div className="flex flex-col items-center justify-center gap-4 w-full p-4">
-          <h2 className="font-bold text-5xl text-gray-800 " >12+</h2>
-          <p className="text-lg font-medium text-gray-700">Years in Business</p>
+        <div className={titleContainerStyle}>
+          <h2 className={titleStyle} >12+</h2>
+          <p className={subTitleStyle}>Years in Business</p>
         </div>
       </div>
     </section>

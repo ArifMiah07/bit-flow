@@ -12,9 +12,6 @@ export default function HeroSection() {
         <p className="text-md md:text-lg lg:text-xl text-center lg:text-left text-gray-600 font-light ">
           We are a digital and creative agency that specializes in creating
           innovative solutions for businesses of all sizes.
-          {/* Our team of experts
-          is dedicated to helping you achieve your goals through cutting-edge
-          design and technology. */}
         </p>
         <div className="flex flex-col items-center justify-center lg:items-start lg:justify-center">
           <Link to={"/project"}>

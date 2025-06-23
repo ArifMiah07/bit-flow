@@ -32,3 +32,8 @@ body {
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
 }
+
+/* boz shadow */
+.working-image {
+  box-shadow: 30px -30px papayawhip;
+}
