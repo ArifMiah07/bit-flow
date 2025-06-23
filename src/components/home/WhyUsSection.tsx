@@ -7,12 +7,12 @@ export default function WhyUsSection() {
     <section className="w-full h-full flex flex-col justify-center items-center bg-purple-50 p-4">
       {/* heading */}
       <div className=" flex justify-center w-full my-6 lg:my-12">
-        <h1 className="text-5xl font-bold text-gray-900 ">
+        <h1 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 ">
           Why We Are Different
         </h1>
       </div>
       <div className="w-full h-full flex flex-col lg:flex-row  justify-center">
-        <div className="flex flex-col items-center justify-center gap-6 w-full lg:w-1/2 p-4">
+        <div className="flex flex-col items-start lg:items-center lg:justify-start lg:justify-center gap-6 w-full lg:w-1/2 p-4">
           {info?.map((item: IInfo, index: number) => (
             <div className="flex flex-row items-center justify-center gap-4 " key={index}>
               {/* logo */}
@@ -21,8 +21,8 @@ export default function WhyUsSection() {
               </div>
               <div className="flex flex-col items-start justify-center gap-1 ">
                 {/* text */}
-                <h1 className="text-xl font-md text-gray-700">{item.heading || "heading"}</h1>
-                <p className="font-light text-gray-600  ">{item.description || "description"}</p>
+                <h1 className=" text-md md:text-lg lg:text-xl font-md text-gray-700">{item.heading || "heading"}</h1>
+                <p className=" text-sm md:text-md lg:text-[16px] font-light text-gray-600  ">{item.description || "description"}</p>
               </div>
             </div>
           ))}

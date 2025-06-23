@@ -6,16 +6,16 @@ export default function ServicesSection() {
 
 
   return (
-    <section className=" w-full h-full flex flex-col justify-center p-4">
+    <section className="w-full h-full flex flex-col justify-center p-4">
       {/* heading */}
-      <div className="flex  justify-center w-full my-6 lg:my-12">
-        <h1 className="text-5xl font-bold text-gray-900 ">What Do We Do</h1>
+      <div className="flex justify-center w-full my-6 lg:my-12">
+        <h1 className="text-3xl md:4xl lg:text-5xl font-bold text-gray-900 ">What Do We Do</h1>
       </div>
       {/* slider card */}
       <div>
         {/* See all card btn */}
         <div className="flex lg:flex-row items-center flex-col-reverse lg:justify-end w-full px-4">
-          <button className="bg-[#3e83fe] text-left text-white px-4 py-2 rounded-sm">
+          <button className="bg-[#3e83fe] cursor-pointer text-left text-white text-sm md:text-md lg:text-lg px-3 py-1 lg:px-5 lg:py-2 rounded-sm">
             See All
           </button>
         </div>
@@ -31,7 +31,7 @@ export default function ServicesSection() {
                 alt={card.title || "card image"}
               />
               <div className=" my-6">
-                <h2 className="text-3xl font-bold text-black">
+                <h2 className="text-xl md:2xl lg:text-3xl font-bold text-black">
                   {card.title || "Card Title"}
                 </h2>
               </div>
@@ -40,7 +40,7 @@ export default function ServicesSection() {
         </div>
       </div>
       {/* projects */}
-      <div className="flex flex-col lg:flex-row items-center justify-center w-full my-10">
+      <div className="flex flex-col md:flex-row items-center justify-center w-full my-10">
         <div className={titleContainerStyle}>
           <h2 className={titleStyle} >700+</h2>
           <p className={subTitleStyle}>Project Done</p>

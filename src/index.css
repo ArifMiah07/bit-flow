@@ -47,6 +47,22 @@ body {
   border-radius: 75% 25% 75% 25% / 45% 55% 45% 55%;
 }
 
+
+@keyframes slideArrow {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-5px);
+  }
+}
+
+.element:hover {
+  animation: slideArrow 1 0.3s ease-in-out forwards;
+}
+
+
+
 @media screen and (max-width: 768px) {
   .working-image {
     box-shadow: 20px -20px papayawhip;

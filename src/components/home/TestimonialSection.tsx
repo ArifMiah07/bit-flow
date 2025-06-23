@@ -3,8 +3,8 @@ export default function TestimonialSection() {
     <section className="flex flex-col items-center justify-center my-6 lg:my-12">
       {/* text */}
       <div className=" flex flex-col items-center justify-center w-full my-6 lg:my-12 ">
-        <h3 className="text-md text-purple-500 font-medium uppercase my-6 ">Testimonial</h3>
-        <h1 className="text-5xl font-bold text-gray-900 ">
+        <h3 className="text-md text-purple-500 font-medium uppercase  my-4 md:my-6 ">Testimonial</h3>
+        <h1 className=" text-3xl md:text-4xl lg:text-5xl text-center font-bold text-gray-900 ">
           Clients Feedback
         </h1>
       </div>
@@ -32,12 +32,12 @@ export default function TestimonialSection() {
         </div>
       </div>
       <div className="flex flex-col items-center justify-center w-full p-4">
-        <p className="text-md text-gray-600 font-light text-center w-full lg:w-1/2 p-4">
+        <p className="text-sm  md:text-md text-gray-600 font-light text-center w-full lg:w-1/2 p-4">
             "Working with this team has been a game-changer for our business. Their
             creativity and attention to detail are unmatched. We couldn't be happier
             with the results!"
         </p>
-        <h3 className="text-lg font-semibold text-gray-800">David Smith</h3>
+        <h3 className="text-md md:text-lg font-semibold text-gray-800">David Smith</h3>
       </div>
       <div className="flex flex-row items-center justify-center gap-2 w-full p-4 ">
         {

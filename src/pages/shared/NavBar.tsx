@@ -2,15 +2,18 @@ import { BiMenu } from "react-icons/bi";
 import { Link } from "react-router-dom";
 
 export default function NavBar() {
+  // menu data :todo: move them into lib or constants file
+  const menu: string[] = ["Home", "About Us", "Our Works", "Contact"];
 
-
-    // menu data :todo: move them into lib or constants file
-  const menu : string[] = ["Home", "About Us", "Our Works", "Contact"];
-  // /our-works
-  // /about-us
-
-  const navLinks = menu.map((item : string, indx : number) => (
-    <Link key={indx} className="" to={`${item?.toLowerCase().trim() === 'home'? '/' : item?.trim()?.toLowerCase()?.split(" ")?.join("-")}`}>
+  const navLinks = menu.map((item: string, indx: number) => (
+    <Link
+      key={indx}
+      className=""
+      to={`${
+        item?.toLowerCase().trim() === "home"
+          ? "/"
+          : item?.trim()?.toLowerCase()?.split(" ")?.join("-")
+      }`}>
       <li className="text-md text-gray-700 font-normal ">{item}</li>
     </Link>
   ));
@@ -25,8 +28,14 @@ export default function NavBar() {
       </div>
       {/* logo */}
       <div className="flex items-center justify-center">
-        <span className="text-lg md:text-2xl lg:text-3xl text-purple-500 font-bold">Bit</span>
-        <span className="text-lg md:text-2xl lg:text-3xl text-pink-500 font-bold">Flow</span>
+        <Link to={"/"}>
+          <span className="text-lg md:text-2xl lg:text-3xl text-purple-500 font-bold">
+            Bit
+          </span>
+          <span className="text-lg md:text-2xl lg:text-3xl text-pink-500 font-bold">
+            Flow
+          </span>
+        </Link>
       </div>
       {/* menu */}
       <div className="hidden w-full md:flex items-center justify-center">
@@ -45,6 +54,6 @@ export default function NavBar() {
 }
 /**
  * This is Navbar component and it will be visible from main layout
- * 
- * 
+ *
+ *
  */
