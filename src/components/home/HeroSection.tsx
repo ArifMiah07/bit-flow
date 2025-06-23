@@ -3,7 +3,7 @@ import heroImage from "../../assets/hero-section.webp";
 
 export default function HeroSection() {
   return (
-    <section className=" flex flex-col lg:flex-row items-center justify-center w-full min-h-[80vh] bg-[#f8f9ff] text-white">
+    <section className=" flex flex-col lg:flex-row items-center justify-center w-full h-full py-6 md:py-12 lg:py-24 px-4 bg-[#f8f9ff] text-white">
       {/* hero text */}
       <div className=" w-full lg:w-1/2 flex flex-col gap-6 p-4 justify-center ">
         <h1 className="text-2xl md:text-3xl lg:text-5xl text-center lg:text-left text-black font-bold ">
