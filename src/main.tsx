@@ -6,7 +6,6 @@ import router from "./routes/routes.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    {/* wrapping with react router */}
     <RouterProvider router={router}></RouterProvider>
   </StrictMode>
 );

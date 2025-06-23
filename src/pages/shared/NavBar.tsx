@@ -6,9 +6,11 @@ export default function NavBar() {
 
     // menu data :todo: move them into lib or constants file
   const menu : string[] = ["Home", "About Us", "Our Works", "Contact"];
+  // /our-works
+  // /about-us
 
   const navLinks = menu.map((item : string, indx : number) => (
-    <Link key={indx} className="" to={`/${item?.trim()?.toLowerCase()?.split(" ")?.join("-")}`}>
+    <Link key={indx} className="" to={`${item?.toLowerCase().trim() === 'home'? '/' : item?.trim()?.toLowerCase()?.split(" ")?.join("-")}`}>
       <li className="text-md text-gray-700 font-normal ">{item}</li>
     </Link>
   ));
