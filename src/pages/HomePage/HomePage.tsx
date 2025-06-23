@@ -1,3 +1,4 @@
+import ContactSection from "../../components/home/ContactSection";
 import HeroSection from "../../components/home/HeroSection";
 import ServicesSection from "../../components/home/ServicesSection";
 import TestimonialSection from "../../components/home/TestimonialSection";
@@ -10,6 +11,7 @@ export default function HomePage() {
       <ServicesSection></ServicesSection>
       <WhyUsSection></WhyUsSection>
       <TestimonialSection></TestimonialSection>
+      <ContactSection></ContactSection>
     </div>
   );
 }

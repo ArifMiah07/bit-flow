@@ -14,7 +14,7 @@ export default function NavBar() {
   ));
 
   return (
-    <nav className="flex items-center justify-between p-4 bg-[#f8f9ff] text-white">
+    <nav className="flex items-center justify-between py-4 px-8 bg-[#f8f9ff] text-white">
       {/* sm hidden on >=md device*/}
       <div className="flex md:hidden items-center justify-center">
         <span className="text-pink-500">

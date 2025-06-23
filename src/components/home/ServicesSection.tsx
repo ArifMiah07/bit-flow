@@ -6,7 +6,7 @@ export default function ServicesSection() {
 
 
   return (
-    <section className=" w-full h-full flex flex-col justify-center">
+    <section className=" w-full h-full flex flex-col justify-center p-4">
       {/* heading */}
       <div className="flex  justify-center w-full my-6 lg:my-12">
         <h1 className="text-5xl font-bold text-gray-900 ">What Do We Do</h1>
