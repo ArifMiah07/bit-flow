@@ -6,7 +6,7 @@ export default function ServicesSection() {
 
 
   return (
-    <section className="w-full h-full flex flex-col justify-center p-4">
+    <section className="w-full h-full flex flex-col justify-center py-2 px-4 lg:py-4 lg:px-8">
       {/* heading */}
       <div className="flex justify-center w-full my-6 lg:my-12">
         <h1 className="text-3xl md:4xl lg:text-5xl font-bold text-gray-900 ">What Do We Do</h1>
@@ -14,13 +14,13 @@ export default function ServicesSection() {
       {/* slider card */}
       <div>
         {/* See all card btn */}
-        <div className="flex lg:flex-row items-center flex-col-reverse lg:justify-end w-full px-4">
+        <div className="flex lg:flex-row items-center flex-col-reverse lg:justify-end w-full md:px-4">
           <button className="bg-[#3e83fe] cursor-pointer text-left text-white text-sm md:text-md lg:text-lg px-3 py-1 lg:px-5 lg:py-2 rounded-sm">
             See All
           </button>
         </div>
         {/* card */}
-        <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full p-4">
+        <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-full md:p-4">
           {cardData?.slice(0, 3)?.map((card: TCard, index: number) => (
             <div
               key={index}

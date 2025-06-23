@@ -4,7 +4,7 @@ import workingImage from "../../assets/working-desk.jpg";
 
 export default function WhyUsSection() {
   return (
-    <section className="w-full h-full flex flex-col justify-center items-center bg-purple-50 p-4">
+    <section className="w-full h-full flex flex-col justify-center items-center bg-purple-50 py-2 px-4 lg:py-4 lg:px-8">
       {/* heading */}
       <div className=" flex justify-center w-full my-6 lg:my-12">
         <h1 className="text-center text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 ">
@@ -12,7 +12,7 @@ export default function WhyUsSection() {
         </h1>
       </div>
       <div className="w-full h-full flex flex-col lg:flex-row  justify-center">
-        <div className="flex flex-col items-start lg:items-center lg:justify-start lg:justify-center gap-6 w-full lg:w-1/2 p-4">
+        <div className="flex flex-col items-start lg:items-center md:justify-start lg:justify-center gap-6 w-full lg:w-1/2 md:p-4">
           {info?.map((item: IInfo, index: number) => (
             <div className="flex flex-row items-center justify-center gap-4 " key={index}>
               {/* logo */}
@@ -27,8 +27,8 @@ export default function WhyUsSection() {
             </div>
           ))}
         </div>
-        <div className="500 w-full lg:w-1/2 h-full flex justify-center ">
-          <div className=" w-full lg:w-7/12 h-full flex  justify-center p-5 ">
+        <div className="500 w-full lg:w-1/2 h-full flex justify-center mt-12 lg:mt-0 ">
+          <div className=" w-full lg:w-7/12 h-full flex  justify-center md:p-5 ">
             <div className="">
               <img 
               className="working-image w-full h-full object-cover"

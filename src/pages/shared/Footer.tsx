@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <section className="w-full border-t border-gray-500 h-full flex flex-col items-center justify-center gap-4 p-8 text-gray-800">
+    <section className="w-full border-t border-gray-500 h-full flex flex-col items-center justify-center gap-4 py-2 px-4 lg:py-4 lg:px-8 text-gray-800">
       {/* logo */}
       <div className="flex items-center justify-start w-full">
         <Link to={"/"}>

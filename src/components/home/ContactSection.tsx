@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function ContactSection() {
   return (
-    <section className="w-full h-full flex flex-col items-center justify-center  p-12 bg-[#3e83fe] mt-6 lg:mt-12 ">
+    <section className="w-full h-full flex flex-col items-center justify-center p-12 bg-[#3e83fe] mt-6 lg:mt-12 ">
       <div className="flex flex-col item-center justify-center w-full h-full gap-4 p-4 ">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white text-center ">
           Lets Discuss your Project
