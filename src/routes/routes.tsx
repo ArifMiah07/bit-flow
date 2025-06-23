@@ -3,6 +3,7 @@ import App from "../App";
 import HomePage from "../pages/HomePage/HomePage";
 import AboutPage from "../pages/AboutPage/AboutPage";
 import OurWorksPage from "../pages/OurWorksPage/OurWorksPage";
+import ErrorPage from "../pages/ErrorPage/ErrorPage";
 
 
 
@@ -13,7 +14,7 @@ const router = createBrowserRouter([
     {
         path: '/',
         element: <App></App>,
-        errorElement: <div>Something went wrong</div>,
+        errorElement: <ErrorPage></ErrorPage>,
         children: [
             {
                 index: true,
